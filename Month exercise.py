@@ -3,6 +3,7 @@
 #Month exercise
 
 month = int(input("Please enter a month by using 1-12 being January - December: "))
+year = int(input("Please enter the year: "))
 
 if month == 1:
     print ("January")
@@ -30,6 +31,12 @@ elif month == 12:
     print("December")
 else:
     print("This isn't a month")
+
+if year % 4 == 0:
+    print("It's a leap year")
+else:
+    print("It isn't a leap year")
+    
     
     
 
