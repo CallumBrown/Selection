@@ -2,8 +2,9 @@
 #03-10-14
 #Month exercise
 
-month = int(input("Please enter a month by using 1-12 being January - December: "))
-year = int(input("Please enter the year: "))
+month = int(input("Please enter a month by using 1-12 (January - December): "))
+
+year = int(input("Please enter a year: "))
 
 if month == 1:
     print ("January")
@@ -36,8 +37,26 @@ if year % 4 == 0:
     print("It's a leap year")
 else:
     print("It isn't a leap year")
-    
-    
+
+
+day = int(input("Please enter a day: "))
+
+if day ==1:
+    print("1st {0} {1}".format(month,year))
+elif day ==21:
+    print("21st {0} {1}".format(month,year))
+elif day ==31:
+    print("31st {0} {1}".format(month,year))
+elif day ==2:
+    print("2nd {0} {1}".format(month,year))
+elif day ==22:
+    print("22nd {0} {1}".format(month,year))
+if day ==3:
+    print("3rd {0} {1}".format(month,year))
+if day ==23:
+    print("23rd {0} {1}".format(month,year))
+else:
+    print("{3} {2} {1}".format(day,month,year))
     
 
     
