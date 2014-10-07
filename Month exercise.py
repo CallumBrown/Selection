@@ -7,29 +7,29 @@ month = int(input("Please enter a month by using 1-12 (January - December): "))
 year = int(input("Please enter a year: "))
 
 if month == 1:
-    print ("January")
+    month = "January"
 elif month == 2:
-    print ("Febuary")
+    month = "Febuary"
 elif month == 3:
-    print("March")
+    month ="March"
 elif month == 4:
-    print("April")
+    month = "April"
 elif month == 5:
-    print("May")
+    month = "May"
 elif month == 6:
-    print("June")
+    month = "June"
 elif month == 7:
-    print("July")
+    month = "July"
 elif month ==8:
-    print("August")
+    month = "August"
 elif month == 9:
-    print("September")
+    month = "September"
 elif month ==10:
-    print("October")
+    month = "October"
 elif month ==11:
-    print("November")
+    month = "November"
 elif month == 12:
-    print("December")
+    month = "December"
 else:
     print("This isn't a month")
 
@@ -51,12 +51,12 @@ elif day ==2:
     print("2nd {0} {1}".format(month,year))
 elif day ==22:
     print("22nd {0} {1}".format(month,year))
-if day ==3:
+elif day ==3:
     print("3rd {0} {1}".format(month,year))
-if day ==23:
+elif day ==23:
     print("23rd {0} {1}".format(month,year))
 else:
-    print("{3} {2} {1}".format(day,month,year))
+    print("{0}th {1} {2}".format(day,month,year))
     
 
     
